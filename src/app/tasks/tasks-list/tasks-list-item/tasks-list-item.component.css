@@ -1,0 +1,44 @@
+.task-list-item {
+    --edit-color: #4357ad;
+    --delete-color: #d8315b;
+    --active-color: #ccc;
+    display: grid;
+    grid-template-columns: auto  4rem 5rem;
+    margin-bottom: 0.8em;
+}
+
+.task-list-item__name {
+    display: flex;
+    align-items: center;
+}
+
+.task-list-item__button {
+    font-family: inherit;
+    border: none;
+    padding: 1em 0.8em;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task-list-item__button--edit {
+    margin-right: 0.6em;
+    background-color: var(--edit-color);
+}
+
+.task-list-item__button--edit:hover,
+.task-list-item__button--edit:active {
+    background-color: var(--active-color);
+    color: var(--edit-color);
+}
+
+.task-list-item__button--delete {
+    background-color: var(--delete-color);
+}
+
+.task-list-item__button--delete:hover,
+.task-list-item__button--delete:active {
+    background-color: var(--active-color);
+    color: var(--delete-color);
+}

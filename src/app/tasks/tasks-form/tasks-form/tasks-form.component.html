@@ -1,0 +1,11 @@
+<div class="task-form" *ngIf="selectedTask else noTaskSelected">
+    <input class="task-form__input" type="text" [value]="selectedTask.taskName" #updateTaskInput>
+    <button class="task-form__button task-form__button--update" (click)="onUpdateTask()">Update Task</button>
+</div>
+
+<ng-template #noTaskSelected>
+    <div class="task-form">
+        <input class="task-form__input" type="text" placeholder="Enter Task" #newTaskInput>
+        <button class="task-form__button" (click)="onAddTask()">Add Task</button>
+    </div>
+</ng-template>

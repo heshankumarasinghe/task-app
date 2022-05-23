@@ -1,0 +1,6 @@
+<div class="tasks-list">
+    <h2 class="tasks-list__heading">Tasks</h2>
+    <div *ngFor="let task of tasks">
+        <app-tasks-list-item [task]="task" (editButtonPressed)="onEditButtonPressed(task)"></app-tasks-list-item>
+    </div>
+</div>

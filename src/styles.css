@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #f68e5f;
+    --primary-dark: #f76c5e;
+    --primary-light: #f5dd90;
+    --accent: #324376;
+    --accent-light: #586ba4;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(245,221,144);
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 35%, var(--primary-dark) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+.tasks-list {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    width: 500px;
+    margin-bottom: 1em;
+}
+
+.tasks-list__heading {
+    text-align: center;
+    color: var(--accent);
+    font-size: 1.4rem;
+    margin-bottom: 0.5em;
+}

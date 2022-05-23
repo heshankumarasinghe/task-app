@@ -1,0 +1,36 @@
+.task-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: white;
+}
+
+.task-form__input {
+    background-color: white;
+    font-family: inherit;
+    padding: 0.6em;
+    outline: none;
+    border: 1px solid var(--accent-light);
+    border-radius: 5px;
+    margin-bottom: 0.6em;
+}
+
+.task-form__button {
+    background-color: var(--accent-light);
+    border: none;
+    color: white;
+    font-family: inherit;
+    border-radius: 5px;
+    padding: 0.8em;
+    cursor: pointer;
+}
+
+.task-form__button--update {
+    background-color: #2b9720;
+}
+
+.task-form__button:hover,
+.task-form__button:active {
+    background-color: #ccc;
+    color: var(--accent-light);
+}
